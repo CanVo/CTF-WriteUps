@@ -18,7 +18,7 @@ After running binwalk on the image, we found 3 instances of JPEG image data in t
 
 <img src="bin walk results.png" width="450" />
 
-From the discoveries, the next plan was to view the image more in-depth using free online photo forensic sites. The one we used was: http://exif.regex.info/exif.cgi
+From the discoveries, the next plan was to view the image more in-depth using free online photo forensic sites. The one we used was Jeffrey's Image Metadata Viewer: http://exif.regex.info/exif.cgi
 
 Putting in the original Hekkerman image file revealed a thumbnail that was quite different from the original image.
 
