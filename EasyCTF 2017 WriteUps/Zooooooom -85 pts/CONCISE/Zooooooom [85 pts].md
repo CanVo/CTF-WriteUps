@@ -14,6 +14,6 @@ We used a tool called "binwalk" that analyzes file contents. Binwalk can be foun
 
 <img src="bin walk results.png" width="450" />
 
-After running binwalk on the image, we found 3 instances of jpg images in the file itself.
+After running binwalk on the image, we found 3 instances of JPEG image data in the file itself.
 
 
