@@ -20,6 +20,6 @@ From the discoveries, the next plan was to view the image more in-depth using fr
 
 Putting in the original Hekkerman image file revealed a thumbnail that was quite different from the original image.
 
-<img src="screenshot.png" width="650" />
+<img src="screenshot.png" width="900" />
 
 
