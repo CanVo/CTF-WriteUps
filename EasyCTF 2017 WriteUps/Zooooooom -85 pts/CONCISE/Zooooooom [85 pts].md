@@ -14,9 +14,9 @@ We are given this image from the description:
 
 We used a tool called "binwalk" that analyzes file contents. Binwalk can be found here: https://github.com/devttys0/binwalk
 
-<img src="bin walk results.png" width="450" />
-
 After running binwalk on the image, we found 3 instances of JPEG image data in the file itself.
+
+<img src="bin walk results.png" width="450" />
 
 From the discoveries, the next plan was to view the image more in-depth using free online photo forensic sites. The one we used was: http://exif.regex.info/exif.cgi
 
