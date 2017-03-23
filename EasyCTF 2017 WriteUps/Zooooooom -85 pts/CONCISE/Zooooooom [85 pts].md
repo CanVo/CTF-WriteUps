@@ -4,7 +4,7 @@
 
 **Description:** Hekkerman is looking awfully spooky. That hekker glare could pierce a firewall. What can he see that you can't?
 
-##Write Up
+## Write Up
 
 We are given this image from the description:
 
