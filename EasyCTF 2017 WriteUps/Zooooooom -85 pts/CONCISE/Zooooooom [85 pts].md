@@ -28,6 +28,6 @@ After doing so, we were presented with a new thumbnail that included the flag.
 
 <img src="screenshot2.png" width="900" />
 
-The flag was: easyctf{d33p_zo0m_HeKker_2c1ae5}
+The flag is: easyctf{d33p_zo0m_HeKker_2c1ae5}
 
 
