@@ -12,6 +12,6 @@ We are given this image from the description:
 
 We used a tool called "binwalk" that analyzes the image's content.
 
-<img src="bin walk results.png" width="350" />
+<img src="bin walk results.png" width="450" />
 
 "Binwalk" can be found here: https://github.com/devttys0/binwalk
