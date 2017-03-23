@@ -22,4 +22,12 @@ Putting in the original Hekkerman image file revealed a thumbnail that was quite
 
 <img src="screenshot.png" width="900" />
 
+After this discovery, we decided to save the **thumbnail image** itself and upload it back onto the website.
+
+After doing so, we were presented with a new thumbnail that included the flag.
+
+<img src="screenshot2.png" width="900" />
+
+The flag was: easyctf{d33p_zo0m_HeKker_2c1ae5}
+
 
