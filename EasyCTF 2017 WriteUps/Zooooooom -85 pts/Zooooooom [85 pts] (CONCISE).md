@@ -2,4 +2,6 @@
 
 **Points:** 80
 
-**Description:**
+**Description:**Hekkerman is looking awfully spooky. That hekker glare could pierce a firewall. What can he see that you can't?
+
+
