@@ -125,7 +125,7 @@ main()
 
 ## Write Up
 
-We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode function, it checks and needs the word "Red" inorder to continue the run. Not providing it will end the program and alert us that we need to choose another word. It also runs through an if check to send the remainder of the inputted value after being mod'd by 10 to flagSpawn.
+We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode() function, it checks and needs the word "Red" inorder to continue the run. Not providing it will end the program and alert us that we need to choose another word. It also runs through an if check to send the remainder of the inputted value after being mod'd by 10 to flagSpawn().
 ``` vbs
 Dim msg
 
@@ -163,7 +163,7 @@ Function flagDecode(Byval String, Byval Num)
 End Function
 ```
 
-After passing through flagDecode, it calls flagSpawn where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. 
+After passing through flagDecode(), it calls flagSpawn() where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. 
 ``` vbs
 Function flagSpawn(ByVal switch)
 	msg = "Choose a different number, please."
@@ -192,7 +192,7 @@ Function flagDecision()
 End Function
 ```
 
-Choosing "yes" will call the last method final.
+Choosing "yes" will call the last method final().
 
 ``` vbs
 Function final()
