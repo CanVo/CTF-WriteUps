@@ -163,6 +163,19 @@ Function flagDecode(Byval String, Byval Num)
 End Function
 ```
 
-After passing through flagDecode, it calls flagSpawn where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag. Choosing "yes" will prompt us that the flag is generated from every second letter in each word in superString in main. Concatatenating the letters results in "foundme"
+After passing through flagDecode, it calls flagSpawn where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. 
+``` vbs
+Function flagSpawn(ByVal switch)
+	msg = "Choose a different number, please."
+
+	if switch >= 5 Then
+		flagDecision
+	ElseIf switch < 5 Then
+		msgbox msg, VBCritical, "Nope, sorry!"	
+	End If
+End Function
+```
+
+After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag. Choosing "yes" will prompt us that the flag is generated from every second letter in each word in superString in main. Concatatenating the letters results in "foundme"
 
 The flag is: AHCTF{foundme}
