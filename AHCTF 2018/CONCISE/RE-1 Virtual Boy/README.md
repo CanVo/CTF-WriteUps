@@ -1,3 +1,18 @@
+
+## Samuel's Code
+
+**Category:** Reverse
+
+**Points:** 175
+
+**Description:** I got hired at this startup and they told me to look at this program their old employee made. They told me he left a message in it, but I don't know how to get it.
+
+**Hint:** None.
+
+## Write Up
+
+We are given a VBScript file.
+
 ### VirtualBoy.vbs:
 ``` VBScript
 Dim msg
@@ -127,3 +142,7 @@ End Function
 main()
 
 ```
+
+
+
+The flag is: AHCTF{foundme}
