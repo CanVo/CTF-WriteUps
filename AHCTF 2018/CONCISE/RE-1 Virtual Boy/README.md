@@ -11,9 +11,9 @@
 
 ## Write Up
 
-We are given a VBScript file.
+We are given a VBScript file:
 
-### VirtualBoy.vbs:
+### VirtualBoy.vbs
 ``` VBScript
 Dim msg
 
@@ -52,10 +52,6 @@ End Function
 
 
 
-
-
-
-
 Function flagSpawn(ByVal switch)
 	msg = "Choose a different number, please."
 
@@ -65,10 +61,6 @@ Function flagSpawn(ByVal switch)
 		msgbox msg, VBCritical, "Nope, sorry!"	
 	End If
 End Function
-
-
-
-
 
 
 
@@ -83,10 +75,6 @@ Function flagDecision()
     		msgbox msg, VBCritical, "Wow, interestingÖ"
 	End Select
 End Function
-
-
-
-
 
 
 
@@ -122,10 +110,6 @@ Function final()
 	msgbox msg, VBExclamation, "This was fun."
 	
 End Function
-
-
-
-
 
 
 
