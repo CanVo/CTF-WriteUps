@@ -13,5 +13,8 @@
 ## Write Up
 
 
+<img src="beepboop1.png" width="521" />
+
+
 
 The flag is: AHCTF{Sounding_Secrets}
