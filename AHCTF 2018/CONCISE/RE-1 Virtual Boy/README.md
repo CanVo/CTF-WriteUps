@@ -125,7 +125,7 @@ main()
 
 ## Write Up
 
-We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode function, it checks and needs the word "Red" inorder to continue the trace. Not providing it will end the program and alert us that we need to choose another word.
+We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode function, it checks and needs the word "Red" inorder to continue the run. Not providing it will end the program and alert us that we need to choose another word. It also runs through an if check to send the remainder of the inputted value after being mod'd by 10 to flagSpawn.
 ``` vbs
 Dim msg
 
@@ -176,6 +176,62 @@ Function flagSpawn(ByVal switch)
 End Function
 ```
 
-After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag. Choosing "yes" will prompt us that the flag is generated from every second letter in each word in superString in main. Concatatenating the letters results in "foundme"
+After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag.
+
+``` vbs
+Function flagDecision()
+	msg = "Okay, bye"
+	result = MsgBox ("Do you want the flag?", vbYesNo, "Wow, you got this far?")
+
+	Select Case result
+	Case vbYes
+    		final
+	Case vbNo
+    		msgbox msg, VBCritical, "Wow, interestingÖ"
+	End Select
+End Function
+```
+
+Choosing "yes" will call the last method final.
+
+``` vbs
+Function final()
+	Dim num: num = 10
+	Dim msg: msg = " "
+
+	Do Until num = 0
+		if num = 9 Then
+			msg = msg & " letter"
+		ElseIf num = 3 Then
+			msg = msg & " string"
+		ElseIf num = 6 Then
+			msg = msg & " word"
+		ElseIf num = 7 Then
+			msg = msg & " each"
+		ElseIf num = 5 Then
+			msg = msg & " in"
+		ElseIf num = 1 Then
+			msg = msg & " main"
+		ElseIf num = 2 Then
+			msg = msg & " in"
+		ElseIf num = 4 Then
+			msg = msg & " super"
+		ElseIf num = 8 Then
+			msg = msg & " of"
+		Else
+			msg = msg & " Second"
+		End If
+		num = num - 1
+	Loop
+	
+	msgbox msg, VBExclamation, "This was fun."
+	
+End Function
+```
+
+
+prompt us that the flag is generated from every second letter in each word in superString in main. 
+
+Concatatenating the letters results in "foundme"
 
 The flag is: AHCTF{foundme}
