@@ -15,7 +15,7 @@ We are given this image from the description:
 
 <img src="secretingredient.png" width="521" />
 
-From this image, you can tell that it has been digitally manipulated into a mix square grid. To get the flag you must fix this by manipulating the image back by switching around the squares, doing so will result it to the original.
+From this image, you can tell that it has been digitally manipulated into a mixed 6x6 square grid. To get the flag you must fix this by manipulating the image back by switching around the squares, doing so will result it to the original image.
 
 <img src="CTF_PROBLEM1_SOLUTION.png" width="521" />
 
