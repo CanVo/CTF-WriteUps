@@ -230,7 +230,19 @@ End Function
 ```
 
 
-prompt us that the flag is generated from every second letter in each word in superString in main. 
+It then prompts us that the flag is generated from every second letter in each word in superStrings in main method. 
+
+``` vbs
+Function main()
+	Dim magicNumber: magicNumber = 99 + 603 + 951 + 3120 + 1337 + 1234 + 999
+	Dim superStrings: superString = "After, Board, Hug, Snail, Adventure, Empress, Red" 	
+
+	strInputString = InputBox("Enter the secret word, please:", "Can's Secret Flag Generator v0.97")
+	strInputNum = InputBox("Enter the secret number, please:", "Can's Secret Flag Generator v0.97")
+
+	flagDecode strInputString, strInputNum
+End Function
+```
 
 Concatatenating the letters results in "foundme"
 
