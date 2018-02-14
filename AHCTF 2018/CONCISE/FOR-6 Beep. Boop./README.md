@@ -17,7 +17,6 @@
 
 <img src="beepboop2.png" width="900" />
 
-<img src="beepboop3.png" width="900" />
 
 
 
