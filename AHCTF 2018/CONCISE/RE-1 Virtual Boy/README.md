@@ -125,6 +125,44 @@ main()
 
 ## Write Up
 
-We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode function, it checks and needs the word "Red" inorder to continue the trace. Not providing it will end the program and alert us that we need to choose another word.After passing through flagDecode, it calls flagSpawn where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag. Choosing "yes" will prompt us that the flag is generated from every second letter in each word in superString in main. Concatatenating the letters results in "foundme"
+We are given a VBScript file. When ran on a Windows host, it prompts us for a secret word and secret number. Based in the flagDecode function, it checks and needs the word "Red" inorder to continue the trace. Not providing it will end the program and alert us that we need to choose another word.
+``` vbs
+Dim msg
+
+Function flagDecode(Byval String, Byval Num)
+	Dim stringCheck: stringCheck = "Red"
+	Dim stringCheck2: stringCheck2 = "red"
+	Dim calc: calc = Num MOD 10
+	msg = "Wrong secret word, sorry!"
+
+	If String = stringCheck Or String = stringCheck2 Then
+		If calc = 1 Then
+   			flagSpawn calc
+		ElseIf calc = 2 Then
+			flagSpawn calc 
+		ElseIf calc = 3 Then
+			flagSpawn calc
+		ElseIf calc = 4 Then
+			flagSpawn calc
+		ElseIf calc = 5 Then
+			flagSpawn calc
+		ElseIf calc = 6 Then
+			flagSpawn calc
+		ElseIf calc = 7 Then
+			flagSpawn calc
+		ElseIf calc = 8 Then
+			flagSpawn calc
+		ElseIf calc = 9 Then
+			flagSpawn calc
+		Else
+			flagSpawn calc
+		END If
+	Else
+		msgbox msg, VBCritical, "Better luck next time!"
+	End If
+End Function
+```
+
+After passing through flagDecode, it calls flagSpawn where it checks if the number entered has a remainder greater than 5 after being mod'd by 10. Not doing so will alert us that we need to choose another number and end the program. After passing through flagSpawn, it calls flagDecision where it prompts a text box asking if we want the flag. Choosing "yes" will prompt us that the flag is generated from every second letter in each word in superString in main. Concatatenating the letters results in "foundme"
 
 The flag is: AHCTF{foundme}
