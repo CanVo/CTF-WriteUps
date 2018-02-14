@@ -13,8 +13,8 @@
 
 ## Write Up
 
-We are given an audio file. Upon listening, you can notice it consists of short and long tone notes. If this sounds familiar then it's because the audio file is playing morse code. Writing down the frequencies of the notes and utilizing an free online tool to convert it will result in the decoding of the flag.
+We are given an audio file. Upon listening, you can notice it consists of short and long tone notes. If this sounds familiar then it's because the audio file is playing morse code. Writing down the frequencies of the notes and utilizing a free online tool to convert it will result in the decoding of the flag.
 
-<img src="samuelscode.png" width="521" />
+<img src="samuelscode.png" width="700" />
 
 The flag is: AHCTF{canyouhearme?}
