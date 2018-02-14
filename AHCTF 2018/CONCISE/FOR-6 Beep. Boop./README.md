@@ -13,7 +13,7 @@
 ## Write Up
 
 
-<img src="beepboop1.png" width="900" />
+<img src="beepboop1.png" width="1000" />
 
 
 
