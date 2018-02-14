@@ -9,10 +9,6 @@
 
 **Hint:** None.
 
-## Write Up
-
-We are given a VBScript file:
-
 ### VirtualBoy.vbs
 ``` vbs
 Dim msg
@@ -127,6 +123,8 @@ main()
 
 ```
 
+## Write Up
 
+We are given a VBScript file.
 
 The flag is: AHCTF{foundme}
