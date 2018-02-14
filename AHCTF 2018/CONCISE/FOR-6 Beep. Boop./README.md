@@ -15,6 +15,8 @@
 
 <img src="beepboop1.png" width="900" />
 
+<img src="beepboop2.png" width="900" />
+
 
 
 The flag is: AHCTF{Sounding_Secrets}
