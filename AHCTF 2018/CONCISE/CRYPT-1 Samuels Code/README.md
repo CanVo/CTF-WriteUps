@@ -7,7 +7,7 @@
 
 **Points:** 100
 
-**Description:** I'm so disoriented right now.
+**Description:** My friend Samuel sent me this audio file but I don't know what it means. Can you help me figure it out?
 
 **Hint:** None.
 
