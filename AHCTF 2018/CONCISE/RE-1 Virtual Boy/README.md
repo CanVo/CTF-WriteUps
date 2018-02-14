@@ -14,7 +14,7 @@
 We are given a VBScript file:
 
 ### VirtualBoy.vbs
-``` VBScript
+``` vbs
 Dim msg
 
 Function flagDecode(Byval String, Byval Num)
